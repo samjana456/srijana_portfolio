@@ -1,0 +1,70 @@
+.project-container{
+    display: flex;
+   gap: 2%;
+    padding-bottom: 5%;
+}
+.project-container img{
+    border-radius: 10px;
+}
+.project1{
+    
+    border: 2px solid #ff0095;
+    border-radius: 10px;
+  
+   width: 45%;
+   padding:3% 3% 3% 3%;
+}
+.project2{
+    border: 2px solid #ff0095;
+    border-radius: 10px;
+  
+   width: 45%;
+   padding:3% 3% 3% 3%;
+  
+}
+.gitlink{
+    text-align: center;
+    padding-bottom: 5%;
+
+
+}
+.gitlink i{
+    -webkit-text-stroke: 2px white;
+     color: black; 
+    padding-right: 5px;
+    font-size: 40px;
+}
+.gitlink button{
+    background-color: #ff0095;
+    /* color: white; */
+    border: 2px solid  #ff0095;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: white;
+    color:#ff0095 ;
+    
+}
+.gitlink a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.gitlink button:hover a{
+    color: #ff0095;
+}
+.project2 a{
+   
+    color:#ff0095 ;
+}
+.project1 a{
+   
+    color:#ff0095 ;
+}
+.project-container h3{
+    color: #ff0095;
+}

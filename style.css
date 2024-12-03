@@ -1,0 +1,366 @@
+body{
+   margin-left: 10%;
+   margin-right: 10%;
+    background-color: #fff5eb ;
+    font-family:cursive;
+}
+body {
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+
+
+body.light {
+    background-color: #fff5eb; /* Light background */
+    color: #000000;
+}
+
+body.dark {
+    background-color: #333333; /* Dark background */
+    color: #ffffff;
+}
+body.dark nav {
+    background-color: #333333; /* Dark background for navbar */
+    color: white; /* Light text for dark mode */
+}
+body.dark p {
+    color: white !important; /* This will override inline styles */
+}
+
+.theme {
+    padding-left: 20px;
+    cursor: pointer; /* Change cursor to pointer for clickability */
+    /* font-size: 24px; Adjust size as needed */
+    color: #ff0095; /* Initial icon color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav{
+   
+    background-color: #fff5eb;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        /* background-color: #fff5eb; */
+        /* padding: 10px; */
+       
+    }
+
+.logo img{
+    border-radius: 50%;
+}
+.links{
+    display: flex;
+}
+.theme{
+    padding-top: 70px; 
+    font-size: 30px
+}
+
+.theme:hover{
+    cursor: pointer;
+}
+.links ul{
+   
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    
+}
+.links li a{
+    display: block;     /* Makes the entire area clickable */
+    padding: 10px; 
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    
+    
+}
+body.dark .links li a {
+    color: white; /* Change link color to white in dark mode */
+}
+
+.links li {
+    position: relative; /* Needed for absolute positioning of the ::after */
+    list-style: none;   /* Removes default bullet points */
+    padding: 0;         /* Remove padding to avoid extra gap */
+    margin: 0;      /* Adds some padding for better clickability */
+    transition: color 0.3s;
+}
+
+.links li::after {
+    content: "";              
+    position: absolute;       
+    left: 0;                
+     bottom:-1;             
+    width: 0;                
+    height: 4px;             
+     
+    transition: width 0.3s;  
+}
+
+.links li:hover::after,
+.links li:active::after,
+.links li:focus::after {
+    width: 100%; 
+            
+    background-color:#ff0095;   /* Change color on hover and focus */
+}
+.links li a:hover,
+.links li a:focus,
+.links li a:active {
+    color: #ff0095;  /* Text color changes on hover/focus/active */
+}
+
+/* main part css starts here */
+.contactbtn button{
+    background-color:#ff0095; ;
+    height: 50px;
+    width: 155px;
+    border-radius: 20px;
+    border-color: #ff0095;
+    color: white;
+    font-size: 20px;
+}
+.contactbtn a{
+    text-decoration: none;
+    color: white;
+}
+.contactbtn i{
+   /* background-color:#ff0095;  */
+   padding-left: 10px;
+    color:#ff0095;;
+   font-size: 18px;
+    -webkit-text-stroke:1px white;
+}
+.contactbtn button:hover{
+    cursor: pointer;
+    background-color:white ;
+    color: #ff0095;
+    
+}
+
+.contactbtn button:hover a {
+    color: #ff0095; /* Ensure the anchor text changes color on hover */
+}
+
+.contactbtn button:hover i {
+    color: white; /* Icon color changes to match the text */
+    -webkit-text-stroke:1px #ff0095;
+
+}
+.con{
+    display: flex;
+    padding-top: 30px;
+    gap: 50px;
+}
+.linkedin a{
+    color: none;
+
+}
+.linkedin i{
+    -webkit-text-stroke:2px black ;
+    color: #fff5eb;
+    font-size: 30px;
+    
+   
+}
+.linkedin i:hover{
+    cursor: pointer;
+    -webkit-text-stroke:2px #ff0095;
+}
+.github i{
+    -webkit-text-stroke:2px black ;
+    color:#fff5eb;
+    font-size: 30px; 
+}
+.github i:hover{
+    cursor: pointer;
+    -webkit-text-stroke:2px #ff0095;
+}
+body.dark .theme {
+    color: white; /* Change theme toggle icon color in dark mode */
+}
+.division{
+    display:flex;
+    padding-top: 2%;
+}
+.curved-line {
+    width: 100%;            /* Adjust the width */
+    height: 5px;          /* Adjust the thickness */
+    background-color: #ff0095; /* Line color */
+    border-radius: 50px ;  /* Make the line curved (pill shape) */
+    margin: 20px auto;     /* Center the line */
+}
+
+
+/* about tag starts here */
+.aboutme{
+    margin-bottom: 7%;
+}
+.aboutme i{
+    color: #ff0095;
+   font-size: 30px;
+   animation: bounce 1s infinite;
+  
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Initial and ending position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up at 50% */
+    }
+}
+.arrow{
+    text-align: center;
+}
+
+
+/* personal informations gors here  */
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12%;
+    padding: 20px; /* Optional padding */
+}
+
+.photo2 {
+    flex: 1; /* Allow this div to grow */
+    max-width: 500px; /* Set a max width to control image size */
+}
+
+.details {
+    padding-left: 5%;
+    flex: 2; /* Allow details to take up more space */
+}
+
+.tab-buttons {
+    display: flex;
+    margin-bottom: 20px; /* Space below buttons */
+    border: 1px solid rgb(196, 190, 190);
+    width: 600px;
+    border-radius: 10px;
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px 20px;
+    background-color: #fff5eb; /* Default button background */
+    color: #807979;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Space between buttons */
+    
+}
+
+.tab-btn.active {
+    background-color: #ff0095; /* Active button background */
+    color: #fff; /* Active button text color */
+    border-radius: 10px;
+   
+}
+
+.tab-content {
+    display: none; /* Hide all content by default */
+}
+
+.tab-content.active {
+    display: block; /* Show the active content */
+}
+
+.one {
+    display: flex;
+    gap: 20%;
+}
+.one1{
+    display: flex;
+    gap: 35%;
+}
+
+.content i {
+    -webkit-text-stroke: 2px #ff0095;
+    color: #fff5eb;
+    padding-right: 5px;
+}
+.second{
+    display: flex;
+    gap: 10%;
+}
+.education ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Optional: remove padding */
+}
+
+.education ul li {
+    position: relative; /* Create a positioning context for the pseudo-element */
+    padding-left: 20px; /* Space for the custom bullet */
+}
+
+.education ul li::before {
+    content: ''; /* Required for the pseudo-element */
+    position: absolute;
+    left: 0; /* Position the bullet on the left */
+    top: 15%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    width: 10px; /* Size of the bullet */
+    height: 10px; /* Size of the bullet */
+    border-radius: 50%; /* Make it a circle */
+    background-color:#ff0095; /* Set your desired color */
+}
+.skillimg{
+    display: flex;
+    gap: 5%;
+}
+.toolimg{
+    display: flex;
+    gap: 5%;
+}
+footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #e78ac149;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.footicons{
+    display: flex;
+    gap: 20px;
+   justify-content: center;
+}
+
+.para{
+    text-align: center;
+}
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #fff5eb;
+}
+
+header, footer {
+    margin-left: 0;
+    margin-right: 0;
+}
+.divein{
+   
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}

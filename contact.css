@@ -1,0 +1,84 @@
+.firstmain{
+    display: flex;
+    justify-content: space-between;
+}
+.greetings{
+    width: 600px;
+    padding-top: 70px;
+}
+.introduction i {
+    -webkit-text-stroke: 2px #ff0095;
+    color: #fff5eb;
+    padding-right: 5px;
+}
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* Space for the icon */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.input-container input:hover,
+.input-container textarea:hover {
+    border-color: #ff0095; /* Change border color on hover */
+}
+.input-container .icon {
+    position: absolute;
+    left: 10px; /* Icon position inside the input */
+    top: 50%;
+    transform: translateY(-50%); /* Center icon vertically */
+    -webkit-text-stroke: 2px #ff0095;
+    color: #fff5eb;
+    font-size: 20px;
+}
+
+textarea {
+    height: 100px; /* Adjust as needed */
+}
+
+button {
+    background-color: #ff0095;
+    color: white;
+    border: 2px solid  #ff0095;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 500px;
+}
+
+button:hover {
+    background-color: white;
+    color:#ff0095 ;
+    
+}
+.secondmain{
+    display:flex ;
+    justify-content: space-between;
+    padding-bottom: 5%;
+    padding-right: 4%;
+}
+.introduction{
+    line-height: 50px;
+    width: 50%;
+    font-size: 23px;
+}

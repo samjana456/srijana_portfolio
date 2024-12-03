@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
+    <!-- googlefont link -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+
+    <!-- font awosome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="light">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="./Samjana Lama.png" alt="logo" height="200px" width="200px"></a>
+            </div>
+            <div class="links">
+                <ul>
+
+                    <li><a href="./index.html">Home</a></li>
+
+                    <li><a href="./contact.html"> Contact</a></li>
+                    <li><a href="./project.html">My Project</a></li>
+
+                </ul>
+                <div class="theme" id="theme-toggle">
+                    <i class="fa-solid fa-sun" id="icon"></i>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+    <main class="firstmain">
+        <div class="greetings">
+            <p style="font-size: 30px;color:#ff0095; ;">-Greetings 🌟</p>
+            <h1 style="font-size: 70px;">Shall we collaborate?</h1>
+
+            <p style="color: #363838b2;">Thrilled to collaborate and combine our talents for a winning outcome! Any
+                thoughts or preferences? Let's build something extraordinary together! 🚀</p>
+        </div>
+        <div class="conimg">
+            <img src="./conimg.png" alt="contact img" height="500px" width="500px">
+        </div>
+    </main>
+    <div class="secondmain">
+        <div class="introduction">
+            <p><i class="fa-solid fa-envelope"></i> samjanalama4262@gmail.com</p>
+            <p><i class="fa-solid fa-house"></i> Kathmandu, Nepal</p>
+            <p><i class="fa-solid fa-phone"></i> +977 9849091492</p>
+        </div>
+        <form action="send_email.php" method="POST">
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input type="text" id="name" name="name" placeholder="Full Name" required />
+            </div>
+        
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input type="email" id="email" name="email" placeholder="Your Mail Id" required />
+            </div>
+        
+            <div class="input-container">
+                <i class="fa fa-comment icon"></i>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            </div>
+        
+            <button type="submit">Up for a chat? <i class="fa-solid fa-rocket"></i></button>
+        </form>
+        
+    </div>
+
+
+
+
+
+    <!-- footer starts here  -->
+    <footer>
+        <div class="cont">
+            <div class="footercon">
+                <div class="footicons">
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/samjhana-lama/"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/samjana456"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="para">
+            <p style="color:#363838b2 ;"> Copyright © 2024 Samjana Lama. All rights reserved.</p>
+        </div>
+
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
