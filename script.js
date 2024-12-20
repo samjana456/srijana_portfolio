@@ -1,17 +1,20 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('theme-toggle');
     const icon = document.getElementById('icon');
     const body = document.body;
+    const logo = document.getElementById('logo'); // Ensure the logo element is targeted
 
     // Check for saved user preference, if any
     const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light';
     body.classList.add(currentTheme);
 
-    // Set the icon based on saved preference
+    // Set the icon and logo style based on the saved preference
     if (currentTheme === 'dark') {
         icon.classList.remove('fa-sun');
         icon.classList.add('fa-moon');
+    } else {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
     }
 
     // Theme toggle functionality
@@ -51,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById(tabId).classList.add('active');
         });
     });
+
+    // Debugging (Optional): Log the current theme and body classes
+    console.log('Loaded theme:', currentTheme);
+    console.log('Body classes on load:', body.className);
 });
-
-

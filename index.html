@@ -4,205 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <!-- googlefont link -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
-        rel="stylesheet" />
+    <title>Samjana_Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
 
-    <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="light">
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="./Samjana Lama.png" alt="logo" height="200px" width="200px"></a>
+                <a href="index.html"><img src="./assets/logo.png" alt="Samjana Lama Logo" class="logo" id="logo"></a>
             </div>
             <div class="links">
                 <ul>
-
                     <li><a href="./index.html">Home</a></li>
-
-                    <li><a href="./contact.html"> Contact</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                     <li><a href="./project.html">My Project</a></li>
-
+                    <li class="theme" id="theme-toggle">
+                        <i class="fa-solid fa-sun" id="icon"></i>
+                    </li>
                 </ul>
-                <div class="theme" id="theme-toggle">
-                    <i class="fa-solid fa-sun" id="icon"></i>
-                </div>
             </div>
-
-
         </nav>
     </header>
 
-    <main class="division">
-        <div class="intro">
-            <div class="introduction">
-                <b style="color: #ff0095;">UI/UX DESIGNER</b>
-                <h1 style="font-size: 50px;"> Hello <img src="./see-you-soon.png" alt="hi" height="50px" width="50px">
-                </h1>
-                <h1 style="font-size: 50px;">I am <b style="color: #ff0095;">Samjana Lama</b></h1>
-                <p style="color: #363838b2; width: 40%;"> A comprehensive reflection on my personal and professional
-                    journey, showcasing the unique rhythm I've
-                    developed through diverse engagements and a refined approach to my craft.</p>
-            </div>
-            <div class="contactbtn">
-                <button><a href="./contact.html">Contact me<i class="fa-solid fa-message"></i></a></button>
-            </div>
-            <div class="con">
-                <div class="linkedin">
-                    <a href="https://www.linkedin.com/in/samjhana-lama/"><i class="fa-brands fa-linkedin-in"></i></a>
+    <main>
+        <section class="division">
+            <div class="intro">
+                <div class="introduction">
+                    <strong class="highlight">UI/UX DESIGNER</strong>
+                    <h1>Hello<img src="./assets/hello.png" alt="Wave emoji" height="50" width="50"></h1>
+                    <h1>I am <strong class="highlight">Samjana Lama</strong></h1>
+                    <p class="description">A comprehensive reflection on my personal and professional journey, showcasing the unique rhythm I've developed through diverse engagements and a refined approach to my craft.</p>
                 </div>
-                <div class="github">
-                    <a href="https://github.com/samjana456"><i class="fa-brands fa-github"></i></a>
+                <div class="contactbtn">
+                    <button><a href="./contact.html">Contact me <i class="fa-solid fa-message"></i></a></button>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/samjhana-lama/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/samjana456" class="github" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-        </div>
-        <div class="photo">
-            <img src="./photo.png" alt="photo" height="500px" width="500px">
-        </div>
-
-    </main>
-    <!-- <hr class="curved-line"> -->
-
-    <div class="aboutme">
-        <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
-        <h1 style="text-align: center;">About Me</h1>
-        <p style="text-align: center;padding-left: 10%;padding-right: 10%;color: #363838b2;">Immersed in the art of
-            UI/UX design, I passionately craft intuitive and user-centered digital experiences,
-            seamlessly blending aesthetics with functionality. Proficient in modern design tools like Figma and Adobe
-            XD, my versatile expertise promises designs that not only engage but also solve complex user problems. With
-            a growing portfolio and ongoing education, I bring a commitment to excellence, ready to elevate your
-            projects with creativity and user-focused precision.</p>
-    </div>
-
-
-    <!-- Sections to display the content below the buttons -->
-    <div class="content">
-        <div class="photo2">
-            <img src="./photo2.png" alt="photo" height="500" width="500">
-        </div>
-        <div class="details">
-            <div class="tab-buttons">
-                <button class="tab-btn active" data-tab="personal-info">
-                    <h2>Personal Info</h2>
-                </button>
-                <button class="tab-btn" data-tab="education">
-                    <h2>Qualification</h2>
-                </button>
-                <button class="tab-btn" data-tab="skills">
-                    <h2>Skills</h2>
-                </button>
+            <div class="photo">
+                <img src="./assets/index.png" alt="Samjana Lama's Profile Photo" height="400" width="400">
             </div>
-            <div id="personal-info" class="tab-content active">
-                <h3>Elevating User Experiences with Thoughtful Design Solutions</h3>
-                <p style="color:#363838b2;">My expertise lies in crafting intuitive user interfaces through the
-                    integration of innovative design principles and user-centered methodologies, delivering dynamic and
-                    engaging experiences that redefine industry standards.</p>
-                <div class="one1">
-                    <p><i class="fa-solid fa-user"></i> Samjana Lama</p>
-                    <p><i class="fa-solid fa-phone"></i> +977 9849091492</p>
-                </div>
-                <div class="one">
-                    <p><i class="fa-solid fa-envelope"></i> samjanalama4262@gmail.com</p>
-                    <p><i class="fa-solid fa-house"></i> Kathmandu, Nepal</p>
-                </div>
-                <p style="color: #ff0095;">Language</p>
-                <hr>
-                <p>English, Nepali, Hindi</p>
+        </section>
+
+        <section class="aboutme">
+            <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
+            <h1>About Me</h1>
+            <p class="description">Immersed in the art of UI/UX design, I passionately craft intuitive and user-centered digital experiences, seamlessly blending aesthetics with functionality. Proficient in modern design tools like Figma and Adobe XD, my versatile expertise promises designs that not only engage but also solve complex user problems. With a growing portfolio and ongoing education, I bring a commitment to excellence, ready to elevate your projects with creativity and user-focused precision.</p>
+        </section>
+
+        <section class="content">
+            <div class="photo2">
+                <img src="./assets/index2.png" alt="Samjana Lama's Creative Photo" height="500" width="500">
             </div>
-            <div id="education" class="tab-content" ">
-                <h3 style=" padding-left: 15%;">My Journey</h3>
-                <div class="second">
-                    <div class="workexp">
-
-                        <h3 style="color: #ff0095;"><i class="fa-solid fa-suitcase"></i>Work Experience</h3>
-
+            <div class="details">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="personal-info">Personal Info</button>
+                    <button class="tab-btn" data-tab="education">Qualification</button>
+                    <button class="tab-btn" data-tab="skills">Skills</button>
+                </div>
+                <div id="personal-info" class="tab-content active">
+                    <h3>Elevating User Experiences with Thoughtful Design Solutions</h3>
+                    <p>My expertise lies in crafting intuitive user interfaces through the integration of innovative design principles and user-centered methodologies, delivering dynamic and engaging experiences that redefine industry standards.</p>
+                    <div class="personal-details">
+                        <p><i class="fa-solid fa-user"></i> Samjana Lama</p>
+                       
+                        <p><i class="fa-solid fa-envelope"></i> samjanalama4262@gmail.com</p>
+                        <p><i class="fa-solid fa-house"></i> Kathmandu, Nepal</p>
                     </div>
-                    <div class="education">
-                        <h3 style="color: #ff0095;"> <i class="fa-solid fa-school"></i> Education</h3>
+                    <p class="highlight">Language</p>
+                  
+                    <p>English, Nepali, Hindi</p>
+                </div>
+                <div id="education" class="tab-content">
+                    <h3>My Journey</h3>
+                    <div>
+                        <h4><i class="fa-solid fa-school"></i> Education</h4>
                         <ul>
                             <li>
-                                <h2> Prime College (Tribhuvan University)</h2>
-                                <p style="color:#363838b2; ">Bachelors in Science Computer Science and Information
-                                    Technology</p>
-                                2021-2025
+                                <h5>Prime College (Tribhuvan University)</h5>
+                                <p>Bachelor of Science in Computer Science and Information Technology (2021-2025)</p>
                             </li>
                             <li>
-                                <h2>Prime Collge</h2>
-                                <p style="color:#363838b2; ">High School Science with Mathematics and Computer</p>
-                                2018-2020
+                                <h5>Prime College</h5>
+                                <p>High School Science with Mathematics and Computer (2018-2020)</p>
                             </li>
                             <li>
-                                <h2>Prithwi Secondary Boarding School</h2>
-                                <p style="color:#363838b2; ">Secondary Level Education</p>2018
+                                <h5>Prithwi Secondary Boarding School</h5>
+                                <p>Secondary Level Education (2018)</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div id="skills" class="tab-content" ;">
-                <h3>Tools and Technologies</h3>
-                <div class="skill">
-                    <h3>Skills</h3>
-                    <hr>
-                    <div class="skillimg">
-                        <div class="html"> <img src="./html-5.svg" alt="html" height="100px" width="100px"></div>
-                        <div> <img src="./css.svg" alt="css" height="100px" width="100px"></div>
-
-                        <div> <img src="./js.svg" alt="js" height="100px" width="100px"></div>
-                        <div> <img src="./Adobe_Photoshop_CC_icon.svg.png" alt="adobe photoshop" height="100px" width="100px"></div>
-                        <div> <img src="./Adobe_Illustrator_CC_icon.svg.png" alt="adobe photoshop" height="100px" width="100px"></div>
-                    </div>
-
-
-                    <h3>Tools</h3>
-                    <hr>
-                    <div class="toolimg">
-                        <div> <img src="./vscode.svg" alt="vscode" height="100px" width="100px"></div>
-                        <div> <img src="./github.svg" alt="vscode" height="100px" width="100px"></div>
-                        <div> <img src="./figma-2021-05-05.png" alt="vscode" height="100px" width="100px"></div>
+                <div id="skills" class="tab-content">
+                    <h3>Tools and Technologies</h3>
+                    <div class="skills">
+                        <h4>Skills</h4>
+                        <div class="skillimg">
+                            <img src="./assets/html-5.svg" alt="HTML Logo" height="100" width="100">
+                            <img src="./assets/css.svg" alt="CSS Logo" height="100" width="100">
+                            <img src="./assets/js.svg" alt="CSS Logo" height="100" width="100">
+                             <img src="./assets/Adobe_Illustrator_CC_icon.svg.png" alt="JavaScript Logo" height="100" width="100">
+                            <img src="./assets/Adobe_Photoshop_CC_icon.svg.png" alt="Photoshop Logo" height="100" width="100">
+                           
+                        </div>
+                        <h4>Tools</h4>
+                        <div class="toolimg">
+                            <img src="./assets/vscode.svg" alt="VS Code Logo" height="100" width="100">
+                            <img src="./assets/github.svg" alt="GitHub Logo" height="100" width="100">
+                            <img src="./assets/figma-2021-05-05.png" alt="Figma Logo" height="100" width="100">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="divein">
-        <h1>Ready to Dive In?</h1>
-        <p  style="color:#363838b2 ;">I'm always open to new opportunities and challenges. If you have a project in mind, or just want to chat,
-            feel free to contact me.</p>
-        <div class="contactbtn">
-            <button><a href="./contact.html">Contact me<i class="fa-solid fa-message"></i></a></button>
-        </div>
-    </div>
-    <!-- footer starts here  -->
+        <section class="divein">
+            <h1>Ready to Dive In?</h1>
+            <p>I'm always open to new opportunities and challenges. If you have a project in mind, or just want to chat, feel free to contact me.</p>
+            <div class="contactbtn">
+                <button><a href="./contact.html">Contact me <i class="fa-solid fa-message"></i></a></button>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <div class="cont">
-            <div class="footercon">
-                <div class="footicons">
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/samjhana-lama/"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="github">
-                        <a href="https://github.com/samjana456"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/samjhana-lama/" target="_blank" class="linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/samjana456" target="_blank" class="github">
+                <i class="fa-brands fa-github"></i>
+            </a>
         </div>
-        <div class="para">
-            <p style="color:#363838b2 ;"> Copyright © 2024 Samjana Lama. All rights reserved.</p>
-        </div>
-
-
+        <p>&copy; 2024 Samjana Lama. All rights reserved.</p>
     </footer>
+    
 
     <script src="./script.js"></script>
 </body>

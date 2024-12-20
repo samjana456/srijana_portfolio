@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Samjana_Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./contact.css">
     <!-- googlefont link -->
     <link
@@ -22,92 +22,90 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="./Samjana Lama.png" alt="logo" height="200px" width="200px"></a>
+                <a href="index.html"><img src="./assets/logo.png" alt="Samjana Lama Logo" class="logo" id="logo"></a>
             </div>
             <div class="links">
                 <ul>
-
                     <li><a href="./index.html">Home</a></li>
-
-                    <li><a href="./contact.html"> Contact</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                     <li><a href="./project.html">My Project</a></li>
-
+                    <li class="theme" id="theme-toggle">
+                        <i class="fa-solid fa-sun" id="icon"></i>
+                    </li>
                 </ul>
-                <div class="theme" id="theme-toggle">
-                    <i class="fa-solid fa-sun" id="icon"></i>
-                </div>
             </div>
-
-
         </nav>
     </header>
     <main class="firstmain">
         <div class="greetings">
-            <p style="font-size: 30px;color:#ff0095; ;">-Greetings 🌟</p>
-            <h1 style="font-size: 70px;">Shall we collaborate?</h1>
-
-            <p style="color: #363838b2;">Thrilled to collaborate and combine our talents for a winning outcome! Any
+            <p style="font-size: 1.875rem;color:#ff0095;">-Greetings 🌟</p>
+            <h1>Shall we collaborate?</h1>
+            <p>Thrilled to collaborate and combine our talents for a winning outcome! Any
                 thoughts or preferences? Let's build something extraordinary together! 🚀</p>
         </div>
         <div class="conimg">
-            <img src="./conimg.png" alt="contact img" height="500px" width="500px">
+            <img src="./assets/contact.png" alt="contact img" height="400px" width="400px">
         </div>
     </main>
     <div class="secondmain">
+        <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
         <div class="introduction">
-            <p><i class="fa-solid fa-envelope"></i> samjanalama4262@gmail.com</p>
-            <p><i class="fa-solid fa-house"></i> Kathmandu, Nepal</p>
-            <p><i class="fa-solid fa-phone"></i> +977 9849091492</p>
-        </div>
-        <form action="contact.php" method="POST">
-            <div class="input-container">
-                <i class="fa fa-user icon"></i>
-                <input type="text" id="name" name="name" placeholder="Full Name" required />
-            </div>
-        
-            <div class="input-container">
-                <i class="fa fa-envelope icon"></i>
-                <input type="email" id="email" name="email" placeholder="Your Mail Id" required />
-            </div>
-        
-            <div class="input-container">
-                <i class="fa fa-comment icon"></i>
-                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
-            </div>
-        
-            <button type="submit">Up for a chat? <i class="fa-solid fa-rocket"></i></button>
-        </form>
-        
-        
-    </div>
-
-
-
-
-
-    <!-- footer starts here  -->
-    <footer>
-        <div class="cont">
-            <div class="footercon">
-                <div class="footicons">
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/samjhana-lama/"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="github">
-                        <a href="https://github.com/samjana456"><i class="fa-brands fa-github"></i></a>
+            <h4>
+                <strong>
+                    As a passionate UI/UX designer, I’m always eager to collaborate, create, and explore innovative ideas. 
+                    Feel free to reach out via email or connect with me on LinkedIn to start building something extraordinary together!
+                </strong>
+            </h4>
+            <div class="contact-links">
+                <div class="contact-content">
+                    <img src="./assets/contact2.png" alt="contact image" class="contact-image">
+                    <div class="links-section">
+                        <div class="arrow"><i class="fa-solid fa-angle-down"></i></div>
+                        <p>
+                            <a href="mailto:samjanalama4262@gmail.com" target="_blank" class="contact-link">
+                                <i class="fa-solid fa-envelope"></i> Send an Email
+                            </a>
+                        </p>
+                        <p>
+                            <a href="https://www.linkedin.com/in/samjhana-lama/" target="_blank" class="contact-link">
+                                <i class="fa-brands fa-linkedin"></i> Visit My LinkedIn
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="para">
-            <p style="color:#363838b2 ;"> Copyright © 2024 Samjana Lama. All rights reserved.</p>
+        
+    </div>
+    <div class="conclusion">
+       
+        <h4>
+            
+            <strong>
+                Every great design starts with a meaningful conversation. Let’s connect, share ideas, and create experiences 
+                that truly make a difference. Together, we can bring visions to life and shape the future of design!
+            </strong>
+        </h4>
+    </div>
+    
+    
+        
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/samjhana-lama/" target="_blank" class="linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/samjana456" target="_blank" class="github">
+                <i class="fa-brands fa-github"></i>
+            </a>
         </div>
-
-
+        <p>&copy; 2024 Samjana Lama. All rights reserved.</p>
     </footer>
 
     <script src="./script.js"></script>
 </body>
+
 
 </html>

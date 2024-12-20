@@ -1,84 +1,220 @@
-.firstmain{
+/* Base styles remain unchanged */
+/* p{
+    color: #807979;
+    font-size: 1rem;
+} */
+ h1{
+    color: black;
+    font-size: 2.5rem;
+ }
+.firstmain {
+   
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between greetings and image */
+    align-items: center; /* Vertically align items */
+    padding: 2rem; /* Add some padding around the section */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding-top: 15%;
 }
-.greetings{
-    width: 600px;
-    padding-top: 70px;
+
+.greetings {
+    width: 48%; /* Take half the width on larger screens */
+    text-align: left;
+}
+.arrow{
+   
+        color: #ff0095;
+        font-size: 1.875rem;
+        animation: bounce 1s infinite;
+    
+}
+.conimg {
+    width: 48%; /* Take half the width on larger screens */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;
+}
+
+.conimg img {
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .firstmain {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .greetings,
+    .conimg {
+        width: 100%; /* Full width for smaller screens */
+        margin-bottom: 1.5rem; /* Add space between stacked items */
+    }
+
+    .conimg img {
+        max-width: 80%; /* Reduce image size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .greetings p {
+        font-size: 1rem; /* Adjust font size for very small screens */
+    }
+
+    .conimg img {
+        max-width: 100%; /* Ensure image fits within the screen */
+    }
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center the text content */
+    padding: 2rem; /* Add padding for better spacing */
+    font-size: 1.25rem; /* Adjust font size for readability */
+    line-height: 1.75rem; /* Adjust line height */
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center; /* Center align the content horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 2rem; /* Add space between the image and the links */
+    padding: 2rem; /* Add padding for spacing */
+}
+
+.contact-content {
+    display: flex;
+    align-items: center; /* Align the image and links vertically */
+    gap: 2rem; /* Space between image and links */
+}
+
+.contact-image {
+    max-width: 150px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    align-items: flex-start; /* Align links to the left */
+}
+
+.arrow {
+    font-size: 1.5rem;
+    color: #ff0095;
+    margin-bottom: 1rem; /* Add space below the arrow */
+}
+
+.contact-link {
+    font-size: 1.2rem; /* Slightly larger font size for links */
+    color: #ff0095;
+    text-decoration: none;
+    margin-bottom: 0.5rem; /* Add space between links */
+}
+
+.contact-link i {
+    margin-right: 0.5rem; /* Space between icon and text */
+}
+
+.contact-link:hover {
+    color: #0077b5; /* Change color on hover */
+}
+
+
+
+/* Button and form adjustments */
+button {
+    background-color: #ff0095;
+    color: white;
+    border: 0.125rem solid #ff0095; /* 2px to rem */
+    padding: 0.625rem 1.25rem; /* 10px 20px to rem */
+    border-radius: 0.3125rem; /* 5px to rem */
+    font-size: 1rem; /* 16px to rem */
+    cursor: pointer;
+    width: 100%; /* Full width for buttons on smaller screens */
+    max-width: 31.25rem; /* 500px */
+}
+.conclusion {
+    text-align: center;
+    margin-top: 2rem; /* Add spacing between the sections */
+    padding: 1.5rem;
+   
+    font-size: 1.25rem; /* Slightly larger font for emphasis */
+    line-height: 1.75rem; /* Adjust for readability */
+   
+   
+}
+
+
+
+
+/* Footer adjustments */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+}
+footer .social-links a {
+    margin: 0 0.5rem; /* Add spacing between icons */
+}
+/* Default styles */
+.greetings {
+    background-color: transparent;
+    color: #363838b2;
+    padding: 1rem; /* Add some padding for better spacing */
+    border-radius: 0.5rem; /* Optional for rounded corners */
 }
 .introduction i {
     -webkit-text-stroke: 2px #ff0095;
     color: #fff5eb;
     padding-right: 5px;
 }
-.form {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+
+/* Dark mode styles */
+body.dark .greetings {
+    /* background-color: rgb(6, 6, 6); */
+    color: #fbf8f8; /* Adjust text color for contrast */
+}
+body.dark h1 {
+    /* background-color: rgb(6, 6, 6); */
+    color: #fbf8f8; /* Adjust text color for contrast */
 }
 
-.input-container {
-    position: relative;
-    margin-bottom: 20px;
+/* Responsive Design with Media Queries */
+@media (max-width: 768px) {
+    .firstmain {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align items */
+    }
+    .greetings {
+        width: 90%;
+    }
+    .conimg img {
+        width: 70%; /* Adjust image size */
+    }
+    .secondmain {
+        padding-top: 0;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align items */
+    }
+    .introduction {
+        font-size: 1rem; /* Smaller font size */
+    }
 }
 
-.icon {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px 12px 12px 40px; /* Space for the icon */
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-.input-container input:hover,
-.input-container textarea:hover {
-    border-color: #ff0095; /* Change border color on hover */
-}
-.input-container .icon {
-    position: absolute;
-    left: 10px; /* Icon position inside the input */
-    top: 50%;
-    transform: translateY(-50%); /* Center icon vertically */
-    -webkit-text-stroke: 2px #ff0095;
-    color: #fff5eb;
-    font-size: 20px;
-}
-
-textarea {
-    height: 100px; /* Adjust as needed */
-}
-
-button {
-    background-color: #ff0095;
-    color: white;
-    border: 2px solid  #ff0095;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 500px;
-}
-
-button:hover {
-    background-color: white;
-    color:#ff0095 ;
-    
-}
-.secondmain{
-    display:flex ;
-    justify-content: space-between;
-    padding-bottom: 5%;
-    padding-right: 4%;
-}
-.introduction{
-    line-height: 50px;
-    width: 50%;
-    font-size: 23px;
+@media (max-width: 480px) {
+    .greetings h1 {
+        font-size: 1.5rem; /* Smaller font size for very small screens */
+    }
+    .introduction {
+        font-size: 0.875rem; /* Smaller font size */
+    }
+    button {
+        padding: 0.5rem; /* Adjust padding */
+        font-size: 0.875rem; /* Smaller font size */
+    }
 }

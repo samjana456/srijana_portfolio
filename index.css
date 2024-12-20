@@ -1,0 +1,680 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+p{
+    color: #807979;
+    font-size: 1rem;
+}
+h1{
+    font-size: 2rem;  
+}
+.highlight{
+    color: #ff0095;
+    font-size: 2rem;
+}
+.logo{
+    padding-left: 10%;
+}
+.links{
+    padding-right: 5%;
+}
+
+/* Navbar Styles */
+nav {
+   
+    background-color: #fff5eb;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+    /* padding: 10px 20px; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 3.125rem;
+    margin-left: 3.125rem;
+    padding-left: 10%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+#icon {
+    font-size: 1.5rem;
+    line-height: 2.5;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 0.625rem 0;
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 0.625rem 0;
+    }
+}
+
+.theme {
+    cursor: pointer;
+}
+
+#icon {
+    font-size: 1.5rem;
+}
+
+/* Dark Mode */
+
+body.dark nav{
+    background-color: #333333;
+    color: #fff;
+}
+/* Default logo styles (square) */
+.logo {
+    width: 100px;  /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Default: square */
+    /* overflow: hidden;  */
+    object-fit: cover;
+}
+.social-links{
+    padding-top: 4%;
+    
+    
+}
+
+
+/* Dark mode logo styles */
+body.dark .logo {
+    border-radius: 50%; /* Make the logo round in dark mode */
+}
+
+body.dark{
+    background-color: #333333;
+    color: #fff;
+}
+
+body.dark .theme #icon {
+    color: #fff; /* Light icon color for dark mode */
+}
+
+
+
+nav.dark .theme #icon {
+    color: #fff; /* Light icon color for dark mode */
+}
+   
+
+    /* Adjust header padding for very small screens */
+    /* header {
+        padding: 10px;
+    } */
+
+/* Links container */
+.links ul {
+    display: flex;
+    gap: 1.25rem;
+    
+    justify-content: center; /* Center the links on larger screens */
+}
+
+/* Link styling */
+.links li a {
+    display: block;  /* Makes the entire area clickable */
+    padding: 10px; 
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+body.dark .links li a {
+    color: white; /* Change link color to white in dark mode */
+}
+
+/* Individual link list items */
+.links li {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+/* Hover effect for the links */
+.links li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.0625rem;
+    width: 0;
+    height: 0.25rem;
+    background-color: black;
+    transition: width 0.3s;
+}
+
+/* Hover effect for the link */
+.links li:hover::after {
+    width: 100%; /* Expands the underline on hover */
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .links ul {
+        flex-direction: column;  /* Stack links vertically */
+        gap: 0.9375rem;
+        padding-top: 1.875rem;
+    }
+
+    .links li a {
+        font-size: 1.25rem;  /* Smaller font size */
+        padding: 0.5rem;
+    }
+
+    /* Adjust link underline hover effect */
+    .links li::after {
+        height: 0.1875rem;  /* Make underline thinner on smaller screens */
+    }
+}
+
+/* For very small screens (mobile devices) */
+@media (max-width: 480px) {
+    .links ul {
+        flex-direction: column;  /* Stack links vertically */
+        gap: 0.625rem;
+        padding-top: 1.25rem;
+    }
+
+    .links li a {
+        font-size: 1.125rem;  /* Further reduce font size */
+        padding: 0.375rem;
+    }
+
+    /* Adjust underline hover effect for mobile */
+    .links li::after {
+        height: 0.125rem;  /* Make underline thinner */
+    }
+}
+/* Links hover and active effects */
+.links li:hover::after,
+.links li:active::after,
+.links li:focus::after {
+    width: 100%;
+    background-color: #ff0095; /* Change color on hover and focus */
+}
+
+.links li a:hover,
+.links li a:focus,
+.links li a:active {
+    color: #ff0095;  /* Text color changes on hover/focus/active */
+}
+
+/* Contact button */
+.contactbtn button {
+    background-color: #ff0095;
+    height: 3.125rem;
+    width: 9.6875rem;
+    border-radius: 20px;
+    border-color: #ff0095;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.contactbtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.contactbtn i {
+    padding-left: 0.625rem;
+    color: #ff0095;
+    font-size: 1.125rem;
+    -webkit-text-stroke: 0.0625rem white;
+}
+
+.contactbtn button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #ff0095;
+}
+
+.contactbtn button:hover a {
+    color: #ff0095; /* Ensure the anchor text changes color on hover */
+}
+
+.contactbtn button:hover i {
+    color: white; /* Icon color changes to match the text */
+    -webkit-text-stroke: 0.0625rem #ff0095;
+}
+
+/* Layout for sections with flexbox */
+.con {
+    display: flex;
+    padding-top: 1.875rem;
+    gap: 3.125rem;
+}
+
+.linkedin a {
+    color: none;
+}
+
+.linkedin i {
+    -webkit-text-stroke: 2px black;
+    color: #fff5eb;
+    font-size: 1.875rem;
+}
+
+.linkedin i:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 2px #ff0095;
+}
+.theme{
+    color:#ff0095 ;
+}
+.division .github{
+    padding-left: 3%;
+}
+.github i {
+    -webkit-text-stroke: 2px black;
+    color: #fff5eb;
+    font-size: 30px;
+}
+
+.github i:hover {
+    cursor: pointer;
+    -webkit-text-stroke: 2px #ff0095;
+}
+
+body.dark .theme {
+    color: white; /* Change theme toggle icon color in dark mode */
+}
+
+/* Division line */
+.division {
+    display: flex;
+    padding-top: 15%;
+   justify-content: space-between;
+}
+
+.curved-line {
+    width: 100%;
+    height: 5px;
+    background-color: #ff0095;
+    border-radius: 3.125rem;
+    margin: 1.25rem auto;
+}
+.introduction p{
+    text-align: justify; /* Justifies paragraph content */
+    max-width: 500px; /* Adds width constraint for better readability */
+    line-height: 1.6; /* Improves readability with spacing */
+    margin: 10px 0; /* Adds spacing between paragraphs */
+}
+/* About section */
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Center-aligns titles */
+    margin: 0 auto; /* Centers section on the page */
+    padding: 1.25rem; /* Adds spacing around */
+    justify-content: space-between;
+}
+
+.aboutme p {
+    text-align: justify; /* Justifies paragraph content */
+    max-width: 800px; /* Adds width constraint for better readability */
+    line-height: 1.6; /* Improves readability with spacing */
+    margin: 10px 0; /* Adds spacing between paragraphs */
+}
+
+
+.aboutme i {
+    color: #ff0095;
+    font-size: 1.875rem;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Initial and ending position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up at 50% */
+    }
+}
+
+.arrow {
+    text-align: center;
+}
+
+/* Personal info section */
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12%;
+    padding: 1.25rem;
+}
+
+.photo2 {
+    flex: 1;
+    max-width: 500px;
+}
+
+.details {
+    padding-right: 5%;
+    flex: 2;
+}
+
+/* Tab navigation buttons */
+.tab-buttons {
+    display: flex;
+    margin-bottom: 1.25rem;
+    border: 0.0625rem solid rgb(196, 190, 190);
+    width: 600px;
+    border-radius: 10px;
+    height: 4%;
+    padding-left: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px 1.25rem;
+    background-color: #fff5eb;
+    color: #807979;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.tab-btn.active {
+    background-color: #ff0095;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Layout for the tab content */
+.one {
+    display: flex;
+    gap: 20%;
+}
+
+.one1 {
+    display: flex;
+    gap: 35%;
+}
+
+.content i {
+    -webkit-text-stroke: 2px #ff0095;
+    color: #fff5eb;
+    padding-right: 5px;
+}
+
+.second {
+    display: flex;
+    gap: 10%;
+}
+
+.education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education ul li {
+    position: relative;
+    padding-left: 1.25rem;
+}
+
+.education ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 15%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff0095;
+}
+
+/* Skill and tool images layout */
+.skillimg {
+    display: flex;
+    gap: 5%;
+}
+
+.toolimg {
+    display: flex;
+    gap: 5%;
+}
+
+/* Footer layout */
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #e78ac149;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+.footicons {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+.para {
+    text-align: center;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #fff5eb;
+}
+
+header, footer {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.divein {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .con {
+        flex-direction: column; /* Stack content vertically */
+        gap: 1.875rem;
+    }
+
+    .contactbtn button {
+        width: 140px; /* Adjust button width */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .contactbtn i {
+        font-size: 16px; /* Adjust icon size */
+    }
+
+    .tab-buttons {
+        width: 100%; /* Full-width tab buttons */
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .tab-btn {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .tab-content {
+        padding: 1.25rem;
+    }
+
+    .content {
+        flex-direction: column; /* Stack content vertically */
+        gap: 1.25rem;
+    }
+
+    .photo2 {
+        max-width: 100%;
+    }
+
+    .division {
+        flex-direction: column; /* Stack division elements */
+        gap: 1.25rem;
+    }
+
+    footer {
+        padding: 1.25rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .contactbtn button {
+        width: 11.25rem; /* Adjust button width for mobile */
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+
+    .contactbtn i {
+        font-size: 14px; /* Adjust icon size */
+    }
+
+    .con {
+        gap: 1.25rem; /* Reduce gap for smaller screens */
+    }
+
+    .tab-buttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-btn {
+        font-size: 16px; /* Adjust font size for mobile */
+        margin-right: 0;
+    }
+}
+footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #e78ac149;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    text-align: center; /* Ensures footer content is centered */
+}
+
+footer .social-links {
+    display: flex;
+    gap: 1.25rem; /* Space between icons */
+    justify-content: center; /* Center icons horizontally */
+    margin-bottom: 10px; /* Space between icons and text */
+}
+
+footer .social-links i {
+    font-size: 24px; /* Icon size */
+    color: #f8f6f6; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer .social-links i:hover {
+    color: #ff0095; /* Change icon color on hover */
+}
+
+footer p {
+    font-size: 14px; /* Adjust text size */
+    color: #333; /* Default text color */
+    margin: 0;
+}
+
+/* Dark mode styles for the footer */
+body.dark footer {
+    background-color: #9b547e; /* Change footer background in dark mode */
+}
+
+body.dark footer p {
+    color: white; /* Change paragraph font color to white in dark mode */
+}
+
+
+
+    @media (max-width: 360px) {
+        footer .social-links i {
+            font-size: 1.25rem; /* Slightly reduce icon size for very small screens */
+        }
+        footer p {
+            font-size: 12px; /* Reduce text size for better fit */
+        }
+    }
