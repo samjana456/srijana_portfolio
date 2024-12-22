@@ -1,19 +1,21 @@
-.projects{
-padding-top: 15%;
+.projects {
+    padding-top: 10%;
 }
 
 .project-container {
     display: flex;
-    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    flex-wrap: wrap;
     gap: 2%;
+    justify-content: center;
     padding-bottom: 5%;
-    justify-content: center; /* Center items when wrapping */
 }
 
 .project-container img {
     border-radius: 10px;
-    max-width: 100%; /* Ensure images are responsive */
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
 }
 
 .project1, .project2 {
@@ -21,7 +23,15 @@ padding-top: 15%;
     border-radius: 10px;
     width: 45%;
     padding: 3%;
-    box-sizing: border-box; /* Prevent padding from affecting width */
+    box-sizing: border-box;
+}
+.project2 {
+    text-align: center; /* Centers the content of the box */
+}
+.project2 p {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .gitlink {
@@ -29,20 +39,13 @@ padding-top: 15%;
     padding-bottom: 5%;
 }
 
-.gitlink i {
-    -webkit-text-stroke: 2px white;
-    color: black; 
-    padding-right: 5px;
-    font-size: 2.5rem; /* Use rem for better scalability */
-}
-
 .gitlink button {
     background-color: #ff0095;
     border: 2px solid #ff0095;
-    padding: 0.625rem 1.25rem; /* Use rem instead of px */
+    padding: 0.625rem 1.25rem;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem; /* Responsive font size */
+    font-size: 1rem;
 }
 
 button:hover {
@@ -52,7 +55,7 @@ button:hover {
 
 .gitlink a {
     text-decoration: none;
-    font-size: 1.875rem; /* Use rem for scalability */
+    font-size: 1.875rem;
     color: white;
 }
 
@@ -60,53 +63,20 @@ button:hover {
     color: #ff0095;
 }
 
-.project2 a, .project1 a {
-    color: #ff0095;
-}
-
 .project-container h3 {
     color: #ff0095;
 }
 
-/* Media Queries for Responsive Design */
-
-/* For tablets and smaller screens */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .project1, .project2 {
-        width: 100%; /* Full-width for projects on smaller screens */
-        margin-bottom: 2%; /* Add spacing between stacked projects */
-    }
-
-    .gitlink i {
-        font-size: 2rem; /* Adjust icon size */
-    }
-
-    .gitlink a {
-        font-size: 1.5rem; /* Adjust link size */
-    }
-
-    .gitlink button {
-        font-size: 0.9rem; /* Adjust button font size */
-        padding: 0.5rem 1rem; /* Adjust padding */
+        width: 100%;
+        margin-bottom: 2%;
     }
 }
 
-/* For very small screens (mobile) */
 @media (max-width: 480px) {
-    .gitlink i {
-        font-size: 1.5rem; /* Smaller icon for mobile */
-    }
-
-    .gitlink a {
-        font-size: 1.25rem; /* Smaller link text */
-    }
-
-    .gitlink button {
-        font-size: 0.8rem; /* Smaller button font size */
-        padding: 0.4rem 0.8rem; /* Adjust padding */
-    }
-
     .project-container {
-        gap: 5%; /* Increase gap for better readability */
+        gap: 5%;
     }
 }
