@@ -42,6 +42,9 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .light{
+        padding-top: 65%;
+    }
     .firstmain {
         flex-direction: column; /* Stack items vertically */
     }

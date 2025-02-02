@@ -29,7 +29,7 @@ nav {
     justify-content: space-between;
     align-items:center;
     
-    /* padding: 10px 20px; */
+    padding: 10px 20px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -61,10 +61,25 @@ nav {
     line-height: 2.5;
 }
 
+.division {
+    
+    /* Division line */
+
+    display: flex;
+    padding-top: 15%;
+   justify-content: space-between;
+   
+}
+@media (max-width: 768px) {
+    .division {
+        padding-top: 120%; /* Increase space for smaller screens */
+    }
+}
 
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    
     nav {
         flex-direction: column;
         align-items: center;
@@ -78,26 +93,9 @@ nav {
     .nav-links li {
         margin: 0.625rem 0;
     }
+    
+    
 }
-
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-    }
-
-    .nav-links li {
-        margin: 0.625rem 0;
-    }
-}
-
 .theme {
     cursor: pointer;
 }
@@ -334,12 +332,7 @@ body.dark .theme {
     color: white; /* Change theme toggle icon color in dark mode */
 }
 
-/* Division line */
-.division {
-    display: flex;
-    padding-top: 15%;
-   justify-content: space-between;
-}
+
 
 .curved-line {
     width: 100%;
@@ -587,10 +580,7 @@ header, footer {
         max-width: 100%;
     }
 
-    .division {
-        flex-direction: column; /* Stack division elements */
-        gap: 1.25rem;
-    }
+   
 
     footer {
         padding: 1.25rem;
@@ -718,11 +708,7 @@ body.dark footer p {
         max-width: 100%; /* Ensure images scale properly */
     }
 
-    .division {
-        flex-direction: column; /* Stack division content */
-        gap: 20px;
-        padding: 10px 0; /* Add spacing */
-    }
+   
 
     footer {
         padding: 15px; /* Adjust padding for footer */
