@@ -17,23 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         icon.classList.add('fa-sun');
     }
 
-    // Theme toggle functionality
-    themeToggle.addEventListener('click', function () {
-        body.classList.toggle('dark');
-        body.classList.toggle('light');
-
-        // Change the icon based on the current class
-        if (body.classList.contains('dark')) {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-            localStorage.setItem('theme', 'dark');
-        } else {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-            localStorage.setItem('theme', 'light');
-        }
-        themeToggle.setAttribute('aria-pressed', body.classList.contains('dark'));
-    });
+    
 
     // Tab functionality
     const buttons = document.querySelectorAll('.tab-btn');
@@ -59,3 +43,58 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Loaded theme:', currentTheme);
     console.log('Body classes on load:', body.className);
 });
+// theme 
+document.getElementById("theme-toggle").addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    // Apply dark mode to the .details section
+    document.querySelector(".details").classList.toggle("dark-mode");
+
+    // Apply dark mode to paragraphs inside .details
+    document.querySelectorAll(".details p, .details .one1 p, .details .one p").forEach(p => {
+        p.classList.toggle("dark-mode");
+    });
+
+    // Change theme icon
+    const icon = document.getElementById("icon");
+    if (document.body.classList.contains("dark-mode")) {
+        icon.classList.replace("fa-sun", "fa-moon");
+    } else {
+        icon.classList.replace("fa-moon", "fa-sun");
+    }
+
+    // Save the user’s theme preference
+    localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+});
+
+// Load the user’s preferred theme on page load
+window.onload = function () {
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+        document.querySelector(".details").classList.add("dark-mode");
+
+        document.querySelectorAll(".details p, .details .one1 p, .details .one p").forEach(p => {
+            p.classList.add("dark-mode");
+        });
+
+        document.getElementById("icon").classList.replace("fa-sun", "fa-moon");
+    }
+};
+//form
+
+function handleFormSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const name = document.getElementById('name').value;
+    const contact = document.getElementById('contact').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const subject = encodeURIComponent(`New Contact Form Submission`);
+    const body = encodeURIComponent(`Name: ${name}\nPhone Number: ${contact}\nEmail: ${email}\nMessage:\n${message}`);
+
+    const mailtoLink = `mailto:samjanalama4262.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink; // Open the default email client
+  
+}
