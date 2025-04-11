@@ -93,7 +93,7 @@ function handleFormSubmit(event) {
     const subject = encodeURIComponent(`New Contact Form Submission`);
     const body = encodeURIComponent(`Name: ${name}\nPhone Number: ${contact}\nEmail: ${email}\nMessage:\n${message}`);
 
-    const mailtoLink = `mailto:samjanalama4262.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:sriyonjan000@gmail.com?subject=${subject}&body=${body}`;
 
     window.location.href = mailtoLink; // Open the default email client
   
